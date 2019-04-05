@@ -1,0 +1,10 @@
+.login{
+  width: 100%;
+  font-family: 'Germania One', cursive;
+  font-weight: 300;
+  color: white;
+  padding: 13px 0px 10px 10px; 
+  background: #333;
+  font-size: 1.8em;
+  float: right;
+}

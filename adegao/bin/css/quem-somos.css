@@ -1,0 +1,216 @@
+.historia{
+ background: #000 url(../img/banner4.jpg);
+	background-position: center;
+  	background-repeat: no-repeat;
+  	background-size: cover;
+	filter: blur(5px) grayscale(60%);
+  	height: 500px;
+  	width: 100%;
+}
+.hist-text {
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.7); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  border: 3px solid #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 60%;
+  padding: 40px;
+  text-align: center;
+}
+.hist-text h3{
+ font-family: 'Germania One', cursive;
+ color: white;
+ padding-top: 10px;
+ font-size: 2.5em;
+ text-align:center;
+}
+.hist-text p{
+ color: white;
+ width: 80%;
+ margin: 0 auto;
+ font-weight: 300;
+ font-size: 1.1em;
+ text-align:justify;
+}
+.quem-somos{
+ background: url('../img/beer.gif');	
+background-color: #f6f6f6;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+ width: 50%;
+ height: 400px;
+ float: left;
+}
+.text-somos{
+ background-color: #41414B;
+ width: 50%;
+ height: 400px;
+ float: right;
+ color: white;
+}
+.text-somos p{
+ color: white;
+ width: 80%;
+ margin: 0 auto;
+ font-weight: 300;
+ font-size: 1.1em;
+ text-align:justify;
+}
+.text-somos h3{
+ font-family: 'Germania One', cursive;
+ color: white;
+ padding-top: 10px;
+ font-size: 2.5em;
+ text-align:center;
+}
+
+.eventos{
+ background: url('../img/eventos.gif');	
+ background-color: #f6f6f6;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+ width: 50%;
+ height: 400px;
+ float: right;
+}
+.text-eventos{
+ background-color: #b68048;
+ width: 50%;
+ height: 400px;
+ float: left;
+ color: white;
+}
+.text-eventos p{
+ color: white;
+ width: 80%;
+ margin: 0 auto;
+ font-weight: 300;
+ font-size: 1.1em;
+ text-align:justify;
+}
+.text-eventos h3{
+ font-family: 'Germania One', cursive;
+ color: white;
+ padding-top: 10px;
+ font-size: 2.5em;
+ text-align:center;
+}
+.text-eventos h4{
+ font-family: 'Germania One', cursive;
+ color: white;
+ padding-top: 20px;
+ font-size: 2em;
+ text-align:center;
+}
+
+.leticia{
+ background: url('../img/leticia.jpg');	
+background-color: #f6f6f6;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+ width: 50%;
+ height: 500px;
+ float: left;
+}
+.leticia-hist{
+ background-color: #41414B;
+ width: 50%;
+ height: 500px;
+ float: right;
+ color: white;
+}
+.leticia-hist p{
+ color: white;
+ width: 80%;
+ margin: 0 auto;
+ font-weight: 300;
+ font-size: 1.1em;
+ text-align:justify;
+}
+.leticia-hist h3{
+ font-family: 'Germania One', cursive;
+ color: white;
+ padding-top: 10px;
+ font-size: 2.5em;
+ text-align:center;
+}
+.sandro{
+ background: url('../img/sandro.jpg');	
+background-color: #f6f6f6;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+ width: 50%;
+ height: 500px;
+ float: right;
+}
+.sandro-hist{
+ background-color: #41414B;
+ width: 50%;
+ height: 500px;
+ float: left;
+ color: white;
+}
+.sandro-hist p{
+ color: white;
+ width: 80%;
+ margin: 0 auto;
+ font-weight: 300;
+ font-size: 1.1em;
+ text-align:justify;
+}
+.sandro-hist h3{
+ font-family: 'Germania One', cursive;
+ color: white;
+ padding-top: 10px;
+ font-size: 2.5em;
+ text-align:center;
+}
+.zenark{
+ background: url('../img/zena.jpg');	
+background-color: #f6f6f6;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+ width: 50%;
+ height: 500px;
+ float: left;
+}
+.zenark-hist{
+ background-color: #41414B;
+ width: 50%;
+ height: 500px;
+ float: right;
+ color: white;
+}
+.zenark-hist p{
+ color: white;
+ width: 80%;
+ margin: 0 auto;
+ font-weight: 300;
+ font-size: 1.1em;
+ text-align:justify;
+}
+.zenark-hist h3{
+ font-family: 'Germania One', cursive;
+ color: white;
+ padding-top: 10px;
+ font-size: 2.5em;
+ text-align:center;
+}
+.icone{
+	font-size: 3em;
+	color: white;
+	padding-right: 10px;
+}
+.icone:hover{
+	color: #ccc;
+}

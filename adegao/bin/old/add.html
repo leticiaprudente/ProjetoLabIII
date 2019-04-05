@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<meta http-equiv="Content-Language" content="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <title>Adicionar bebida</title>
+	
+	<script src="js/jquery.js"></script>
+	<link href="css/bootstrap.min.css" rel=stylesheet>
+	<script>
+		$(document).ready(function(){
+			
+			$("#adicionar").click(function() {
+				var codigoDeBarras = $( "#codigoDeBarras" ).val();
+				alert(codigoDeBarras);
+				var nome = $( "#nome" ).val();
+				alert(nome);
+				var marca = $( "#marca" ).val();
+				alert(marca);
+				var tipo = $( "#tipo" ).val();
+				alert(tipo);
+				var teorAlcoolico= $( "#teorAlcoolico" ).val();
+				alert(teorAlcoolico);
+				var ibu = $( "#ibu" ).val();
+				alert(ibu);
+				
+				var url = `/${codigoDeBarras}/${nome}/${marca}/${tipo}/${teorAlcoolico}/${ibu}`;
+				alert(url);
+				
+				$.getJSON(url, function(data) {
+					alert("Bebida adicionada!");		
+				});	
+			});
+				
+		});
+	</script>
+  </head>
+  <body>
+  		<div id="painelBusca">
+        <input id="codigoDeBarras" class="form-control col-md-offset-5" type="text" placeholder="Codigo de barras:">
+        <input id="nome" class="form-control col-md-offset-5" type="text" placeholder="Nome:">
+        <input id="marca" class="form-control col-md-offset-5" type="text" placeholder="Marca:">
+        <input id="tipo" class="form-control col-md-offset-5" type="text" placeholder="Tipo:">
+        <input id="teorAlcoolico" class="form-control col-md-offset-5" type="text" placeholder="Teor Alcoolico:">
+        <input id="ibu" class="form-control col-md-offset-5" type="text" placeholder="Ibu:">
+        
+        <button id="adicionar" class="btn btn-success col-md-offset-5">Adicionar ao estoque</button>
+  </body>
+  
+</html>

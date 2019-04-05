@@ -1,0 +1,23 @@
+.banner-cadastro{
+ background: #000 url(../img/banner3.jpg);
+  background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  filter: blur(2px) grayscale(60%);
+    height: 300px;
+    width: 100%;
+}
+.espaco{
+  padding-bottom: 160px;
+}
+
+.cadastro{
+  width: 100%;
+  font-family: 'Germania One', cursive;
+  color: white;
+  padding: 13px 0px 10px 10px; 
+  background: #333;
+  font-size: 3em;
+  float: right;
+
+}

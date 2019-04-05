@@ -1,0 +1,131 @@
+<html>
+<head>
+	<title>Adega 2019</title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="js/login.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+	<body>
+		<header>
+			<nav>
+				<ul class="nav justify-content-center">
+				  <li class="nav-item">
+				    <a class="nav-link" href="home.html">Inicio</a>
+				  </li>
+				  <li class="nav-item">
+				    <a class="nav-link" href="produtos.html">Produtos</a>
+				  </li>
+				  	<a href="home.html"><img src="img/logo/logo.png" alt="" class="logo"></a>
+				  <li class="nav-item">
+				    <a class="nav-link" href="quem-somos.html">Quem somos</a>
+				  </li>
+				  <li class="nav-item">
+				    <a class="nav-link" href="cadastro.html">Cadastro</a>
+				  </li>
+				</ul>
+			</nav>
+		</header>
+			<div id="conteudo">
+				<div id="banner">
+				<div id="demo" class="carousel slide" data-ride="carousel">
+
+				  <ul class="carousel-indicators">
+				    <li data-target="#demo" data-slide-to="0" class="active"></li>
+				    <li data-target="#demo" data-slide-to="1"></li>
+				    <li data-target="#demo" data-slide-to="2"></li>
+				  </ul>
+			  
+				  <div class="carousel-inner">
+					<div class="carousel-item active">
+					  <div class="item-1"></div>
+					</div>
+					<div class="carousel-item">
+					  <div class="item-2"></div>
+					</div>
+					<div class="carousel-item">
+					  <div class="item-3"></div>
+					</div>
+				  </div>  
+
+				</div>
+				</div>
+				<form id="entrar">
+				<div class="login">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-1"></div>
+							<div class="col-md-4 col-xs-12">
+								<div class="row">	
+									<div class="col-md-3" >Login:</div>
+									<div class="col-md-9">
+										<input type="text" class="form-control" id="usuario">
+									</div>
+								</div>
+							</div>
+							<div class="col-md-4 col-xs-12">
+								<div class="row">	
+									<div class="col-md-3">Senha:</div>
+									<div class="col-md-9"><input type=password class="form-control" id="senha"></div>
+								</div>
+							</div>
+							<div class="col-md-2">
+								<button class="btn btn-success" id="logar" onclick="validarLogin(this.entrar)">Logar</button>
+							</div>
+							<div class="col-md-1"></div>
+						</div>
+					</div>
+				</form>	
+				</div>
+					<div class="bloco">
+							<div class="quem-somos"></div>
+							<div class="text-somos">
+								<h3>Nossa História</h3>
+								<p>A empresa inciada em Mar/2019 em São José dos campos, inicialmente criada para o trabalho do professor Giuliano, porém devida alta demanda e empolgação dos criadores, a empresa foi continua e hoje considera uma das maiores cervejarias de todo Brasil.
+								<br><br>
+								Uma grande realização feita pelos criadores.
+								<div class="criadores" style="text-align: center;">
+									<div class="col-md-4">
+										<img src="img/leticia.jpg" alt="" class="foto">
+										<br><span class="nome">Letícia Prudente</span>
+									</div>
+									<div class="col-md-4">
+										<img src="img/sandro.jpg" alt="" class="foto"><br>
+										<span class="nome">Sandro Toline</span>
+									</div>
+									<div class="col-md-4">
+										<img src="img/zena.jpg" alt="" class="foto"><br>
+										<span class="nome">Thiago Reis "Zenark"</span>
+									</div>
+								</div>
+								</p>
+							</div>
+					</div>
+					<div class="bloco">
+							<div class="text-eventos">
+								<h3>Conheça nossos Eventos</h3>
+								<p class="container">Vem nos visitar, e conheça nossos eventos.
+
+								<p><h4>Próximos eventos</h4></p>
+								<p><i class="fas fa-beer"></i> 30/03 - São José dos Campos - SP</p>
+								<p><i class="fas fa-beer"></i> 06/04 - Campinas - SP</p>
+								<p><i class="fas fa-beer"></i> 13/04 - São Paulo - SP</p>
+								<p><i class="fas fa-beer"></i> 20/04 - Rio de Janeiro - RJ</p>
+								<p><i class="fas fa-beer"></i> 27/04 - Niterói - RJ</p>
+								<p><i class="fas fa-beer"></i> 04/05 - Caldas Novas - GO</p>
+								<p><i class="fas fa-beer"></i> 11/05 - Belo Horizonte - MG</p>
+								</p>
+							</div>
+							<div class="eventos"></div>
+					</div>
+				</div>
+		<footer>
+			Copyright 2019. Adegão ©
+		</footer>
+	</body>
+</html>

@@ -1,0 +1,79 @@
+<html>
+<head>
+	<title>Adega 2019</title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+ 	<script src="js/jquery.js"></script>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+	<body>
+		<header>
+			<nav>
+				<ul class="nav justify-content-center">
+				  <li class="nav-item">
+				    <a class="nav-link" href="home.html">Inicio</a>
+				  </li>
+				  <li class="nav-item">
+				    <a class="nav-link" href="produtos.html">Produtos</a>
+				  </li>
+				  	<a href="home.html"><img src="img/logo/logo.png" alt="" class="logo"></a>
+				  <li class="nav-item">
+				    <a class="nav-link" href="quem-somos.html">Quem somos</a>
+				  </li>
+				  <li class="nav-item">
+				    <a class="nav-link" href="cadastro.html">Cadastro</a>
+				  </li>
+				</ul>
+			</nav>
+		</header>
+			<div id="conteudo">
+				<div class="banner" style="background: url('img/banner3.jpg') center;"></div>
+				<div class="login">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-10 col-xs-10">
+								<div class="row">	
+									<div class="col-md-2">Pesquisar:</div>
+									<div class="col-md-10">
+										<input type="text" class="form-control" id="codigoDeBarras">
+									</div>
+								</div>
+							</div>
+						<div class="col-md-2 col-xs-2" style="text-align: right">
+								<button id="busca" class="btn btn-success">Buscar <i class="fas fa-search"></i></button>
+							</div>
+						</div>
+					</div> 
+				</div>
+				<div class="botoes" style="text-align:center">
+					<a href="cadastro.html" class="botoes btn-cadastrar">Adicionar produtos</a>
+				</div>
+			<ul class="lista" id="dadosBebida"></ul>
+				
+			</div>
+					<footer>
+			Copyright 2019. Adegão ©
+		</footer>
+	</body>
+	<script>
+		$(document).ready(function(){
+			$("#busca").click(function() {
+				var codigoDeBarras = $("#codigoDeBarras").val();
+				$("#dadosBebida").empty();
+				var url = "/codigo/admin/"+codigoDeBarras;
+				alert(codigoDeBarras);
+				$.getJSON(url, function(data)
+				{
+					itens = [];
+					itens.push("<li class='produto'><img src='"+data.espc.img+"' class='imagem'><p class='cerveja'>"+ data.espc.nome+"</p><p class='descricao'>Marca - "+ data.espc.marca+ "<br>Tipo - "+ data.espc.tipo + "<br>Teor Alcoolico - "+ data.espc.teorAlcoolico + "% <br>Ibu - "+ data.espc.ibu + "</p><p class='preco'>R$ "+data.espc.preco+"</p><button class='btn btn-danger'>Remover</button></li>");	
+					$("#dadosBebida").append(itens);
+				});
+
+			});
+		});
+	</script>
+</html>

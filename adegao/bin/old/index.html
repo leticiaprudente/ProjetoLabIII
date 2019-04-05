@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  	
+    <meta charset="utf-8">
+    <title>Home</title>
+	<script src="js/jquery.js"></script>
+	<link href="css/bootstrap.min.css" rel=stylesheet>
+
+  </head>
+  <body>
+  		<div id="painelBusca" class="col-md-6">
+  			<div class="col-md-11">
+            	<input id="codigoDeBarras" class="form-control" type="text" placeholder="Codigo de barras">
+            </div>
+            <div class="col-md-1">
+            	<button id="busca" class="btn btn-primary">Buscar</button>
+			</div>
+		<table class="table table-bordered"> 
+			<caption>Bebidas</caption>
+				<thead>
+					<tr> 
+						<th>Nome</th>
+						<th>Marca</th> 
+						<th>Tipo</th>
+						<th>Teor Alcoolico</th> 
+						<th>Ibu</th> 
+					</tr> 
+				</thead> 
+				<tbody id="dadosBebida"> 
+				</tbody> 
+		</table>
+  </body>
+  	<script>
+		$(document).ready(function(){
+			$("#busca").click(function() {
+				var codigoDeBarras = $("#codigoDeBarras").val();
+				$("#dadosBebida").empty();
+				var url = "/" +codigoDeBarras;
+				$.getJSON(url, function(data)
+				{
+					itens = [];
+					itens.push("<tr><td>"+ data.espc.nome+"</td><td>"+ data.espc.marca+ "</td><td>"+ data.espc.tipo + "</td><td>"+ data.espc.teorAlcoolico + "</td><td>"+ data.espc.ibu + "</td></td></tr>");	
+					$("#dadosBebida").append(itens);
+				});
+
+			});
+		});
+	</script>
+</html>

@@ -1,0 +1,26 @@
+@import url('fonts.css');
+@import url('menu.css');
+@import url('main.css');
+@import url('login.css');
+@import url('home.css');
+@import url('banner.css');
+@import url('produto.css');
+@import url('quem-somos.css');
+@import url('footer.css');
+@import url('cadastro.css');
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: 'Roboto Condensed',sans-serif;
+  font-size: 16px; 
+  background: #fff;
+ }
+#element::-webkit-scrollbar {
+   display: none;
+}
+       ::-webkit-scrollbar {
+   display: none;
+}
+       ::-webkit-scrollbar {
+   display: none;
+}
