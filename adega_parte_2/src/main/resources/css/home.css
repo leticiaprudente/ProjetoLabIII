@@ -1,0 +1,22 @@
+.bloco{
+	display: inline-block;
+	background-color: #333;
+	width: 100%;
+}
+.criadores{
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap
+}
+.foto{
+	height: 100px;
+	width: 100px;
+	margin-top: 25px;
+	border-radius: 100%;
+	border: 2px solid white;
+}
+.nome{
+	font-weight: 300;
+	font-size: 1.2em;
+	margin-top: 10px;
+}

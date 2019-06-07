@@ -1,0 +1,114 @@
+<html>
+<head>
+	<title>Adega 2019</title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+	<body>
+		<header>
+			<nav>
+				<ul class="nav justify-content-center">
+				  <li class="nav-item">
+				    <a class="nav-link" href="home.html">Inicio</a>
+				  </li>
+				  <li class="nav-item">
+				    <a class="nav-link" href="produtos.html">Produtos</a>
+				  </li>
+				  	<a href="home.html"><img src="img/logo/logo.png" alt="" class="logo"></a>
+				  <li class="nav-item">
+				    <a class="nav-link" href="quem-somos.html">Quem somos</a>
+				  </li>
+				  <li class="nav-item">
+				    <a class="nav-link" href="cadastro.html">Cadastro</a>
+				  </li>
+				</ul>
+			</nav>
+		</header>
+			<div id="conteudo">
+					<div class="bloco">
+						<div class="banner-cadastro"></div>
+						<div class="cadastro">
+							<div class="container"> Cadastro Bebida</div>
+						</div>
+					</div>
+		<div class="container-form"> 			
+        <div class="container">
+          <div class="row" style="padding-top:60px">
+            <div class="col-md-3 col-xs-12">
+              <input type="text" name="codigoCadastro"  class="form-control" placeholder="Código de barras" id="codigoDeBarras"/>
+            </div>
+            <div class="col-md-3 col-xs-12">
+               <input type="text" name="nomeCadastro"  class="form-control" placeholder="Nome" id="nome"/>
+            </div>
+            <div class="col-md-3 col-xs-12">
+              <input type="text" name="marcaCadastro"  class="form-control" placeholder="Marca" id="marca"/>
+            </div>
+            <div class="col-md-3 col-xs-12">
+               <input type="text" name="tipoCadastro"  class="form-control" placeholder="Tipo" id="tipo"/>
+            </div>
+            </div>
+          <div class="row" style="padding-top:10px">
+             <div class="col-md-3 col-xs-12">
+                <input type="text" name="teorCadastro"  class="form-control" placeholder="Teor alcoólico" id="teorAlcoolico"/>
+              </div>
+              <div class="col-md-3 col-xs-12">
+                <input type="text" name="ibuCadastro"  class="form-control" placeholder="IBU" id="ibu"/>
+              </div>
+              <div class="col-md-3 col-xs-12">
+                <input type="text" name="precoCadastro"  class="form-control" placeholder="Preço" id="preco"/>
+              </div>
+              <div class="col-md-3 col-xs-12">
+                <input type="text" name="imgCadastro"  class="form-control" placeholder="Imagem (URL)" id="img"/>
+              </div>
+          </div>
+            <div style="text-align: right;padding: 15px 0" class="col-md-12">
+              <button class="btn btn-primary btn-md "  id="alterar">Alterar</button>
+            </div>
+          </div>
+      	</div>
+        </div>
+			<div class="espaco"></div>
+					<footer>
+			Copyright 2019. Adegão ©
+		</footer>
+	</body>
+	
+	<script>
+		$(document).ready(function(){
+			$("#alterar").click(function() {
+				var codigoDeBarras = $("#codigoDeBarras").val(); 
+				//alert("codigo: "+codigoDeBarras);
+				var nome = $("#nome").val();
+				//alert("nome: "+nome);
+				var marca = $("#marca").val();
+				//alert("marca: " +marca);
+				var tipo = $("#tipo").val();
+				//alert("tipo: "+tipo);
+				var teorAlcoolico= $("#teorAlcoolico").val();
+				//alert("teor: " +teorAlcoolico);
+				var ibu = $("#ibu").val();
+				//alert("ibu: " +ibu);
+				var preco = $("#preco").val();
+				//alert("preco: " +preco);
+				var img= $("#img").val();
+				//alert("img: "+img);
+				var url = `admin/altera/${codigoDeBarras}/${ibu}/${nome}/${teorAlcoolico}/${tipo}/${marca}/${img}/${preco}`;
+				alert(url);
+				
+				$.getJSON(url, function(data)
+				{
+					alert("bebida " +data.codigoDeBarras+ " alterada estoque!");
+				});
+
+			});
+		});
+	</script>
+
+</html>
+
