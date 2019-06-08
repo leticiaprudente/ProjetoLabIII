@@ -1,0 +1,253 @@
+<html>
+<head>
+	<title>Adega 2019</title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+	<body>
+		<header>
+			<nav>
+				<ul class="nav justify-content-center">
+				  <li class="nav-item">
+				    <a class="nav-link" href="home.html">Inicio</a>
+				  </li>
+				  <li class="nav-item">
+				    <a class="nav-link" href="produtos.html">Produtos</a>
+				  </li>
+				  	<a href="home.html"><img src="img/logo/logo.png" alt="" class="logo"></a>
+				  <li class="nav-item">
+				    <a class="nav-link" href="quem-somos.html">Quem somos</a>
+				  </li>
+				  <li class="nav-item">
+				    <a class="nav-link" href="cadastro.html">Cadastro</a>
+				  </li>
+				</ul>
+			</nav>
+		</header>
+			<div id="conteudo">
+					<div class="bloco">
+						<div class="banner-cadastro"></div>
+						<div class="cadastro">
+							<div class="container">Cadastro Usuario</div>
+						</div>
+					</div>
+         <div class="container-form"> 
+        <div class="container">
+          <form action="">
+          <div class="row" style="padding-top:60px">
+            <div class="faixa">
+              UsuÃ¡rio
+            </div>
+            <div class="col-md-3 col-xs-12">
+               <span>Login</span>
+              <input type="text" name="login"  class="form-control" placeholder="@usuario" id="login"/>
+            </div>
+            <div class="col-md-3 col-xs-12">
+              <span>Senha</span>
+               <input type="password" name="senha"  class="form-control" id="senha" placeholder="❋❋❋❋❋❋"/>
+            </div>
+            <div class="col-md-3 col-xs-12">
+              <span>Nome Completo</span>
+              <input type="text" name="nomeCompleto"  class="form-control" placeholder="" id="nomeCompleto"/>
+            </div>
+            <div class="col-md-3 col-xs-12">
+              <span>Data Nascimento</span>
+               <input type="text" name="data" id="dataNascimento" placeholder="dd/mm/aaaaa" maxlength="10" class="form-control" onkeypress="mascaraData( this, event )" />
+            </div>
+            <div class="faixa">
+              EnderÃ§o
+            </div>
+             <div class="col-md-2 col-xs-12">
+               <span>Cep</span>
+               <input name="cepEndereco" type="text" id="cepEndereco" class="mascCEP form-control" value="" size="10" maxlength="9" onblur="pesquisacep(this.value);" placeholder="Ex. 99999-999"/>
+               </div> 
+              <div class="col-md-3">          
+                <span>Rua:</span>
+                <input name="ruaEndereco" type="text" id="ruaEndereco" size="60" class="form-control" placeholder="Ex. Rua Y"/>
+              </div>
+              <div class="col-md-2"><span>Bairro:</span>
+                 <input name="bairroEndereco" type="text" id="bairroEndereco" size="40" class="form-control" placeholder="Ex. Bairro X"/>
+               </div>
+              <div class="col-md-3"> 
+                <span>Cidade:</span>
+                <input name="cidadeEndereco" type="text" id="cidadeEndereco" size="40" class="form-control" placeholder="Ex. SÃ£o Paulo"/><br />
+              </div>
+              <div class="col-md-1"> <span>Estado:</span>
+                <input name="estadoEndereco" type="text" id="estadoEndereco" size="2" class="form-control" placeholder="Uf"/><br />
+              </div>
+               <div class="col-md-1"> <span>N:</span>
+                <input name="numeroEndereco" type="text" id="numeroEndereco" size="2" class="form-control"/><br />
+              </div>
+              <div class="col-md-4 col-xs-12">
+                <span>Complemento:</span>
+                <input type="text" name="complementoEndereco"  id="complementoEndereco" class="form-control" placeholder="Ex. Apto 22 Bloco B" id="ibu"/>
+              </div>
+              <div class="col-md-4 col-xs-12">
+                <span>E-mail</span>
+                <input type="text" name="email"  class="form-control" placeholder="Ex. xxxx.yyyy@zzzz.com" id="email"/>
+              </div>
+              <div class="col-md-4 col-xs-12">
+                 <span>Telefone</span>
+                <input type="text" name="celular"  class="form-control" placeholder="(99)99999-9999" id="celular"/>
+              </div>
+          </div>
+            </form>
+            <hr>
+            <div style="text-align: right;padding: 15px 0" class="col-md-12">
+              <button class="btn btn-primary btn-md " type="submit" id="cadastrarUsuario">Cadastrar</button>
+            </div>
+          </div>
+        </div>
+        </div>
+			<div class="espaco"></div>
+					<footer>
+			Copyright 2019. AdegÃ£o Â©
+		</footer>
+	</body>
+	
+<script>
+  function mascaraData( campo, e )
+{
+  var kC = (document.all) ? event.keyCode : e.keyCode;
+  var data = campo.value;
+  
+  if( kC!=8 && kC!=46 )
+  {
+    if( data.length==2 )
+    {
+      campo.value = data += '/';
+    }
+    else if( data.length==5 )
+    {
+      campo.value = data += '/';
+    }
+    else
+      campo.value = data;
+  }
+}
+
+function limpa_formulÃ¡rio_cep() {
+        //Limpa valores do formulÃ¡rio de cep.
+        document.getElementById('ruaEndereco').value=("");
+        document.getElementById('bairroEndereco').value=("");
+        document.getElementById('cidadeEndereco').value=("");
+        document.getElementById('estadoEndereco').value=("");
+}
+
+function meu_callback(conteudo) {
+    if (!("erro" in conteudo)) {
+        //Atualiza os campos com os valores.
+        document.getElementById('ruaEndereco').value=(conteudo.logradouro);
+        document.getElementById('bairroEndereco').value=(conteudo.bairro);
+        document.getElementById('cidadeEndereco').value=(conteudo.localidade);
+        document.getElementById('estadoEndereco').value=(conteudo.uf);
+    } //end if.
+    else {
+        //CEP nÃ£o Encontrado.
+        limpa_formulÃ¡rio_cep();
+        alert("CEP nÃ£o encontrado.");
+    }
+}
+
+function pesquisacep(valor) {
+
+    //Nova variÃ¡vel "cep" somente com dÃ­gitos.
+    var cep = valor.replace(/\D/g, '');
+
+    //Verifica se campo cep possui valor informado.
+    if (cep != "") {
+
+        //ExpressÃ£o regular para validar o CEP.
+        var validacep = /^[0-9]{8}$/;
+
+        //Valida o formato do CEP.
+        if(validacep.test(cep)) {
+
+            document.getElementById('cepEndereco').value = cep.substring(0,5)
+            +"-"
+            +cep.substring(5);
+
+            //Preenche os campos com "..." enquanto consulta webservice.
+            document.getElementById('ruaEndereco').value="...";
+            document.getElementById('bairroEndereco').value="...";
+            document.getElementById('cidadeEndereco').value="...";
+            document.getElementById('estadoEndereco').value="...";
+
+            //Cria um elemento javascript.
+            var script = document.createElement('script');
+
+            //Sincroniza com o callback.
+            script.src = 'https://viacep.com.br/ws/'+ cep + '/json/?callback=meu_callback';
+
+            //Insere script no documento e carrega o conteÃºdo.
+            document.body.appendChild(script);
+
+        } //end if.
+        else {
+            //cep Ã© invÃ¡lido.
+            limpa_formulÃ¡rio_cep();
+            alert("Formato de CEP invÃ¡lido.");
+        }
+    } //end if.
+    else {
+        //cep sem valor, limpa formulÃ¡rio.
+        limpa_formulÃ¡rio_cep();
+    }
+};
+</script>
+
+	<script>
+		$(document).ready(function(){
+			
+			$("#cadastrarUsuario").click(function() 
+			{
+				var login = $("#login").val();
+				//alert("login: "+login);
+				var senha = $("#senha").val();
+				//alert("senha:"+senha);
+				var nomeCompleto = $("#nomeCompleto").val();
+				//alert("nome completo:"+nomeCompleto);
+				var dataNascimento = $("#dataNascimento").val();
+				//alert("data nascimento:"+dataNascimento);
+				var cepEndereco = $("#cepEndereco").val();
+				//alert("cep:"+cepEndereco);
+				var ruaEndereco = $("#ruaEndereco").val();
+				//alert("rua:"+ruaEndereco);
+				var cidadeEndereco = $("#cidadeEndereco").val();
+				//alert("cidade:"+cidadeEndereco);
+				var bairroEndereco = $("#bairroEndereco").val();
+				//alert("bairro:"+bairroEndereco);
+				var estadoEndereco = $("#estadoEndereco").val();
+				//alert("estado:"+estadoEndereco);
+				var numeroEndereco = $("#numeroEndereco").val();
+				//alert("numero:"+numeroEndereco);
+				var complementoEndereco = $("#complementoEndereco").val();
+				//alert("complemento:"+complementoEndereco);
+				var email = $("#email").val();
+				//alert("email:"+email);
+				var celular = $("#celular").val();
+				//alert("celular:"+celular);
+				//var url = "/adega/online/login/"+login+"/"+senha; 
+				
+				
+				var url = "/"+login+"/"+senha+"/"+nomeCompleto+"/1/"+dataNascimento+"/"+cepEndereco+"/"+ruaEndereco+"/"+cidadeEndereco+"/"+bairroEndereco+"/"+estadoEndereco+"/"+numeroEndereco+"/"+complementoEndereco+"/"+email+"/"+celular;
+				alert(url);
+				
+				$.getJSON(url, function(data) {
+					alert("Cadastrado com sucesso!");
+					window.location.href = '/home-login.html';
+						
+				});
+			});
+		});
+		
+	</script>
+
+</html>
+

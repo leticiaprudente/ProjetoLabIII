@@ -1,0 +1,22 @@
+header {
+  	background:#333 /*#b68048*/;
+    position: fixed;
+    z-index: 999999;
+    width: 100%;
+    top: 0;
+    font-family: 'Germania One', cursive;
+    left: 0;
+    font-size: 1.6em;
+    height: 60px;
+}
+
+.nav-link{
+	color: white;
+    transition: all linear 0.3s;
+}
+.nav-link:hover{
+    color:#b68048;
+}
+.logo{
+	height: 100px;
+}

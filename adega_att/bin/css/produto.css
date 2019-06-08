@@ -1,0 +1,104 @@
+.lista{	
+	margin-top: 20px;
+	padding: 10px;
+	width: 100%;
+	text-align: center;
+	color: #333;
+}
+.btn-success{
+	width: 100%;
+	font-family: 'Germania One', cursive;
+}
+.botoes{
+	width: 100%;
+	display: inline-block;
+	text-align: center;
+	margin-top: 5px;
+	margin: 0 auto;
+}
+.botoes a{
+	text-decoration: none;
+}
+.botoes a:hover{
+	color: white;
+}
+.btn-cadastrar{
+	margin-top:10px;
+	background: #ec971f;
+	padding: 5px;
+	font-family: 'Germania One', cursive;
+	border-radius:2px;
+	color: white;
+	text-align: center;
+	width: 50%;
+	font-size: 1.3em;
+	transition: all linear 0.4s;
+}
+.btn-cadastrar:hover{
+	background: #eea236;
+}
+.btn-remover{
+	background: #d43f3a;
+	padding: 5px;
+	font-family: 'Germania One', cursive;
+	border-radius:2px;
+	color: white;
+	text-align: center;
+	width: 50%;
+	margin:0 auto;
+	font-size: 1.3em;
+	transition: all linear 0.4s;
+	display:inline-block;
+}
+.btn-remover:hover{
+	background: #d9534f;
+}
+.btn-alterar{
+	background: #f60;
+	padding: 5px;
+	font-family: 'Germania One', cursive;
+	border-radius:2px;
+	color: white;
+	text-align: center;
+	width: 46%;
+	margin:2%;
+	float: right;
+	font-size: 1.3em;
+	transition: all linear 0.4s;
+	display:inline-block;
+}
+.btn-alterar:hover{
+	background: #FF8432;
+		
+}
+.produto{
+	border: solid 1px #cecece;
+	padding: 10px;
+	margin: 10px;
+	width: 18%;
+	text-align: center;
+	display: inline-block;
+	height: 500px;
+	vertical-align: top;
+}
+.imagem{
+	max-height: 200px;
+	height: 100%;
+}
+
+.cerveja{
+	font-family: 'Germania One', cursive;
+	font-size: 1.2em;
+	height: 30px; 
+	padding: 0px 10px;
+}
+
+.descricao{
+	font-family: 'Roboto Condensed',sans-serif;
+	font-size: 1em;
+	padding-top:15px;
+}
+.preco{
+	font-family: 'Germania One', cursive;
+ 	font-size: 2em;
+}
